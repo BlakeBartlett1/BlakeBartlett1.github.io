@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Template</title>
+<meta charset="UTI-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #4dd2ff;
+  font-family: Arial Black;
+  padding: 30px;
+  text-align: center;
+  font-size: 5vw;
+  color: black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 1000px;
+  background: #ff99ff;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: verdana;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 1000px;
+  background-color: #8c1aff;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #4dd2ff;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+ 
+}
+
+a:link {
+color: black;
+}
+
+a:hover {
+color: white;
+}
+
+a:visited {
+color: gray;
+}
+
+img {
+max-height:100%;
+max-width:100%;
+}
+
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2><img src="https://images.cooltext.com/5405073.png" height=80px/></h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home Page</a></li>
+      <li><a href="#">About JuiceWRLD</a></li>
+      <li><a href="#">Top Albums</a></li>
+      <li><a href="#">Media</a></li>
+      <li><a href="#">Tour</a></li>
+    </ul>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSjp-Qe_NXpLWKUiaFHMYXe9Ar683km_aekS3IlOUN3yHTW1vBO&usqp=CAU" height=100; width=100;>   
+  </nav>
+  
+  <article style="color:white">
+ <img src="https://www.nme.com/wp-content/uploads/2019/12/JuiceWRLD_NME_AFord-6601.jpg">
+ <p>Juice WRLD (Jarad Anthony Higgina) was born on December 2,1998 in Chicago, Illinois. Jarad started as a very small rapper in high school. He would release his early mixtapes on a music streaming app called "soundcloud" in his sophomore year under the name "JuiceTheKid" which would later be changed to "JuiceWRLD". His rapper name was influenced by the imfamous Tupac Shakur and his role in the movie "Juice". So he came up with JuiceWRLD because it represents taking over the world. While he released music on Soundcloud, he would work a part-time job at a factory, but was fired because he was dissatisfied with the job. Thats when he decided to persue his rap career. After he got fired, he completed his album "999" in June 15,2017 which boosed his fame dramatically with his hit song "Lucid Dreams" being his most popular song. After he got recognized from his hit song, he began to get attention from labels and eventually signed with Grade A Productions. He had such a short career only lasting 2017-2020. Jarad suffered from an open drgu addiction and his career ended after an illeged overdose on percocet pain pills. He was on a private jet and arrived at the airport and began to convulse and bleed. he was rushed to the hospital and later pronounced DOA. His funeral was hosted on December 13, 2019, at the Holy Temple Cathedral Church of God in Christ in Harvey, Illinois. May he rest in peace.</p>
+  </article>
+  
+</section>
+
+<footer>
+  <i>Copyright © 2020 Blake Bartlett. All rights reserved.</i>
+</footer>
+
+</body>
+</html>
